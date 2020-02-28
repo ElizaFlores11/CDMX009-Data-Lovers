@@ -1,0 +1,67 @@
+
+@font-face {
+  font-family: "LibreBaskerville-Bold";
+  src: url("fonts/Libre_Baskerville/LibreBaskerville-Bold.ttf"); 
+  font-family: "PTSansNarrow-Bold";
+  src: url("fonts/PT_Sans_Narrow/PTSansNarrow-Bold.ttf");   
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    font-family: PTSansNarrow-Bold;
+}
+footer{
+	height: 100px; 
+	color: black; 
+	font-size: 15px;
+	text-align: center; 
+	font-family: PTSansNarrow-Bold;
+}
+header{
+ height: 200px;
+ width: 100%;
+ background-color: #BCBFC4;
+ font-family:  LibreBaskerville-Bold;     
+}
+.inicio{
+ height: 450px;
+ width: 100%;
+ background-color: black;
+ font-family:  LibreBaskerville-Bold;     
+}
+.headerleft{
+    float: left;
+    width: 30%; 
+}
+.headerright{
+    float: right;
+    width: 70%;
+    font-size: 50px;
+    font-family: Tangerine_Bold;  
+}
+.container {
+    width: 50%;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #008F99;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 7px 1px #333;
+} 
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+  }
+.espaciado{
+    padding-top: 30px;
+    padding-left: 50px; 
+    height: 200px; 
+    background-color: red;
+    width: 20%;   
+}
+.divmenu{
+    width: 50%; 
+}
