@@ -55,7 +55,7 @@ header{
     display: flex;
     justify-content: space-between;
   }
-.espaciado{
+.divbuscador{
     padding-top: 30px;
     padding-left: 50px; 
     height: 200px; 
