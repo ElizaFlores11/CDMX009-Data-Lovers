@@ -1,4 +1,4 @@
-
+/*
 .menu ul {
 		display: flex;
 		padding: 0;
@@ -23,3 +23,110 @@
 	.menu ul li a:hover + ul, .menu ul li ul:hover {
 		display: block;
 	}
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+header {
+  height: 64px;
+  background: #000;
+  color: transparent;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#btn-menu {
+  display: none;
+}
+
+header label {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+#btn-menu {
+  display: none;
+}
+
+header label {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.menu ul {
+  background: #000;
+  display: flex;
+  list-style: none;
+}
+
+.menu ul ul {
+  display: none;
+}
+
+.menu a {
+  display: block;
+  padding: 15px 20px;
+  color: #FFF;
+  text-decoration: none;
+  line-height: 32px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+}
+
+.menu a:hover {
+  background: #2C3E50;
+}
+
+.menu a i {
+  margin-left: 10px;
+}
+
+.menu ul li:hover ul {
+  transition: all 0.3s ease;
+  display: block;
+  position: absolute;
+}
+
+@media (max-width: 768px) {
+  header label {
+    display: block;
+    padding-top: 16px;
+    padding-right: 16px;
+    transition: all 0.4s ease;
+  }
+  
+  .menu {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 70%;
+    transform: translateX(-100%);
+    transition: all 0.3s;
+  }
+  
+  .menu ul {
+    flex-direction: column;
+    //display: block;
+  }
+  
+  .menu ul li:hover ul {
+    display: none;
+    position: static;
+  }
+  
+  .menu a i {
+    position: absolute;
+    right: 16px;
+    line-height: 32px;
+  }
+  
+  #btn-menu:checked ~ .menu {
+    transform: translateX(0%);
+  }
+  
+}

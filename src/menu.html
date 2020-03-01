@@ -1,37 +1,38 @@
-<!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-	<link rel="stylesheet" href="menu.css" />
-</head>
-<body>
-	<nav class="menu">
-		<ul>
-			<li> <a href=""> Personajes </a> 
-				<ul>
-                     <li> <a href="">Primarios</a></li>
-                     <li> <a href="">Secundarios</a></li>
-                     <li><a href="">Terciarios</a></li>
-                  </ul>
-			</li>
-			
-			<li><a href=""> Genero </a>
-				<ul>
-					<li><a href="#">Juan</a></li>
-					<li><a href="#">Paco</a></li>
-					<li><a href="#">Ramón</a></li>
-					<li><a href="#">María</a></li>
-				</ul>
-			</li>
-			<li><a href="#">FAQ</a></li>
-			<li><a href="#">Contacto</a>
-				<ul>
-					<li><a href="#">Email</a></li>
-					<li><a href="#">Mapa</a></li>
-				</ul>
 
-			</li>
-		</ul>
-	</nav>
+<head>
+  <title>Menú Desplegable Responsive</title>
+  <link rel="stylesheet" href="menu.css" />
+  <script type="text/javascript" src="menu.js"></script>
+</head>
+
+<body>
+  <header>
+    <input type="checkbox" id="btn-menu" />
+    <label for="btn-menu">Menú</label>
+    <nav class="menu">
+      <ul>
+        <li><a href="#">Item 1</a></li>
+        <li class="submenu"><a href="#">Item 2 <i class=""></i></a>
+          <ul>
+            <li><a href="#">Sub Item</a></li>
+            <li><a href="#">Sub Item</a></li>
+            <li><a href="#">Sub Item</a></li>
+            <li><a href="#">Sub Item</a></li>
+          </ul>
+        </li>
+        <li class="submenu"><a href="#">Item 3 <i class="fa fa-caret-down"></i></a>
+          <ul>
+            <li><a href="#">Sub Item</a></li>
+            <li><a href="#">Sub Item</a></li>
+            <li><a href="#">Sub Item</a></li>
+            <li><a href="#">Sub Item</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Item 4</a></li>
+      </ul>
+    </nav>
+  </header>
 </body>
+
 </html>
