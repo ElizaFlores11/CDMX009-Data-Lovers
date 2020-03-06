@@ -109,3 +109,14 @@ header{
 #ocultar{
     display: none;
 }
+.ejemplo{
+    display: flex; justify-content: space-between;
+}
+.acomodar{
+    display: flex; 
+    flex-wrap: wrap; 
+    flex-direction: column;
+    width: 500px; 
+    height: 600px; 
+    align-content: space-between;
+}
