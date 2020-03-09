@@ -6,6 +6,8 @@ let buscador = document.querySelector("#Buscar");
 
 //importa la funcion del archivo data
 import { info } from './data.js';
+import { Primarios } from './data.js';
+import { Secundarios } from './data.js';
 import { Genero } from './data.js';
 import { OtroGenero } from './data.js';
 import { Status } from './data.js';
@@ -16,6 +18,13 @@ import { location } from './data.js';
 //Buscador
 document.querySelector('#buscador').addEventListener('change', function(e){
     datos.innerHTML = info(e);
+});
+//Funciones de Principales
+document.querySelector('#Primarios').addEventListener('click', function(){
+    datos.innerHTML = Primarios();
+});
+document.querySelector('#Secundarios').addEventListener('click', function(){
+    datos.innerHTML = Secundarios();
 });
 //Funciones de Genero
 document.querySelector('#femenino').addEventListener('click', function(){

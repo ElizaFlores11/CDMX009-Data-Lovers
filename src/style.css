@@ -7,49 +7,29 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: transparent;
+    background-color: #3C4047;
     font-family: PTSansNarrow-Bold;
 }
 footer{
 	height: 100px; 
-	color: black; 
-	font-size: 15px;
-	text-align: center; 
-	font-family: PTSansNarrow-Bold;
+	color: white; 
+	font-size: 20px;
+    text-align: center; 
+    width: 100%;
+    font-weight: bold;
 }
-header{
+/*header{
  height: 200px;
  width: 100%;
  background-color: #BCBFC4;
  font-family:  LibreBaskerville-Bold;     
-}
+}*/
 .inicio{
  height: 450px;
  width: 100%;
  background-color: transparent;
  font-family:  LibreBaskerville-Bold;     
 }
-.headerleft{
-    float: left;
-    width: 30%; 
-}
-.headerright{
-    float: right;
-    width: 70%;
-    font-size: 50px;
-    font-family: Tangerine_Bold;  
-}
-.container {
-    width: 50%;
-    border-radius: 10px;
-    padding: 20px;
-    border: 1px solid #008F99;
-    margin: 0 auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    background-color: #ffffff;
-    box-shadow: 3px 3px 7px 1px #333;
-} 
 .flex-container {
     display: flex;
     justify-content: space-between;
@@ -75,28 +55,9 @@ header{
     height: 20px;
     border-radius: 5px;   
 }
-.section{
-    padding: 200px;
-    text-align: center;
-}
-#encabezado{
-    width: 80%;
-    border-radius: 10px;
-    padding: 20px;
-    border: 1px solid #008F99;
-    margin: 0 auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    background-color: #ffffff;
-    box-shadow: 3px 3px 7px 1px #333;
-}
-#encabezado h1{
-    text-align: center;
-    color: red;
-    
-}
 #datos{
-    width: 80%;
+    width: 90%;
+    height: auto;
     border-radius: 10px;
     padding: 20px;
     border: 1px solid #008F99;
@@ -106,17 +67,31 @@ header{
     background-color: #ffffff;
     box-shadow: 3px 3px 7px 1px #333;
 }
-#ocultar{
-    display: none;
+#datos h1{
+    color: #C22623;
+    text-align: center;
 }
-.ejemplo{
-    display: flex; justify-content: space-between;
-}
+
 .acomodar{
     display: flex; 
-    flex-wrap: wrap; 
-    flex-direction: column;
-    width: 500px; 
-    height: 600px; 
-    align-content: space-between;
+    flex-wrap: wrap;
 }
+.tarjeta{
+    width: 500px; 
+    border-radius: 10px;
+    padding: 0px;
+    border: 1px solid #008F99;   
+}
+.tarjeta h2{
+    text-align: center;
+   
+}
+.tarjeta img{
+    margin-left: 50px;
+}
+.tarjeta p{
+    text-align: left;
+    font-size: 20px;
+    margin-left: 50px;
+}
+

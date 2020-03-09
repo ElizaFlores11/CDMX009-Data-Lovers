@@ -11,7 +11,7 @@ export const info = (e) => {
     //Resultados+="<div style = 'direction: rtl; display: flex; justify-content: flex-end;'>"
     Resultados+="<div class='acomodar'>"; 
     for (let i = 0; i < result.length; i++) {
-        Resultados+="<div> <h2>" + result[i].name+" </h2>";; 
+        Resultados+="<div class='tarjeta'> <h2>" + result[i].name+" </h2>";; 
         Resultados+=" <img src='"+ result[i].image +"'/>";
         Resultados+=" <p>Id:  "+ result[i].id+" </p>";;
         Resultados+=" <p>Estatus: "+ result[i].status+" </p>"; 
@@ -19,17 +19,48 @@ export const info = (e) => {
         Resultados+=" <p>Genero: "+ result[i].gender+" </p></div>";
     }
         Resultados+="</div>"; 
-    return Resultados;
-                 
+    return Resultados;                 
+};
+
+export const Primarios = () => {
+    let result = chars.filter(chars => chars.id <= 5 ); 
+    let Resultados = " <h1>Personajes Principales</h1>";
+    Resultados+="<div class='acomodar'>"; 
+    for (let i = 0; i < result.length; i++) {
+        Resultados+="<div class='tarjeta'> <h2>" + result[i].name+" </h2>";; 
+        Resultados+=" <img src='"+ result[i].image +"'/>";
+        Resultados+=" <p>Id:  "+ result[i].id+" </p>";;
+        Resultados+=" <p>Estatus: "+ result[i].status+" </p>"; 
+        Resultados+=" <p>Especie: "+ result[i].species+" </p>";
+        Resultados+=" <p>Genero: "+ result[i].gender+" </p></div>";
+    }
+        Resultados+="</div>"; 
+    return Resultados;                 
+};
+
+export const Secundarios = () => {
+    let result = chars.filter(chars => chars.id >= 6 ); 
+    let Resultados = " <h1>Personajes Secundarios</h1>";
+    Resultados+="<div class='acomodar'>"; 
+    for (let i = 0; i < result.length; i++) {
+        Resultados+="<div class='tarjeta'> <h2>" + result[i].name+" </h2>";; 
+        Resultados+=" <img src='"+ result[i].image +"'/>";
+        Resultados+=" <p>Id:  "+ result[i].id+" </p>";;
+        Resultados+=" <p>Estatus: "+ result[i].status+" </p>"; 
+        Resultados+=" <p>Especie: "+ result[i].species+" </p>";
+        Resultados+=" <p>Genero: "+ result[i].gender+" </p></div>";
+    }
+        Resultados+="</div>"; 
+    return Resultados;                 
 };
 
 export const Genero = (genero) => {
     let g = genero; 
     let result = chars.filter(chars => chars.gender == g); 
-    let Resultados = " <h1>Personajes</h1>";
+    let Resultados = " <h1>Personajes de Genero "+ g + "</h1>";
         Resultados+="<div class='acomodar'>"; 
     for (let i = 0; i < result.length; i++) {
-        Resultados+=" <div><h2>" + result[i].name+" </h2>";; 
+        Resultados+=" <div class='tarjeta'><h2>" + result[i].name+" </h2>";; 
         Resultados+=" <img src='"+ result[i].image +"'/>";
         Resultados+=" <p>Id:  "+ result[i].id+" </p>";;
         Resultados+=" <p>Estatus: "+ result[i].status+" </p>"; 
@@ -42,10 +73,10 @@ export const Genero = (genero) => {
 
 export const OtroGenero = () => {
     let result = chars.filter(chars => chars.gender != "Female" && chars.gender != "Male" ); 
-    let Resultados = " <h1>Personajes</h1>";
+    let Resultados = " <h1>Personajes Otro Genero</h1>";
         Resultados+="<div class='acomodar'>"; 
     for (let i = 0; i < result.length; i++) {
-        Resultados+=" <div><h2>" + result[i].name+" </h2>";; 
+        Resultados+=" <div class='tarjeta'><h2>" + result[i].name+" </h2>";; 
         Resultados+=" <img src='"+ result[i].image +"'/>";
         Resultados+=" <p>Id:  "+ result[i].id+" </p>";;
         Resultados+=" <p>Estatus: "+ result[i].status+" </p>"; 
@@ -58,10 +89,10 @@ export const OtroGenero = () => {
 export const Status = (status) => {
     let s = status; 
     let result = chars.filter(chars => chars.status == s); 
-    let Resultados = " <h1>Personajes</h1>";
+    let Resultados = " <h1>Personajes de Estatus "+ s +" </h1>";
         Resultados+="<div class='acomodar'>"; 
     for (let i = 0; i < result.length; i++) {
-        Resultados+=" <div><h2>" + result[i].name+" </h2>";; 
+        Resultados+=" <div class='tarjeta'><h2>" + result[i].name+" </h2>";; 
         Resultados+=" <img src='"+ result[i].image +"'/>";
         Resultados+=" <p>Id:  "+ result[i].id+" </p>";;
         Resultados+=" <p>Estatus: "+ result[i].status+" </p>"; 
@@ -75,10 +106,10 @@ export const Status = (status) => {
 export const OtroStatus = () => {
     let s = status; 
     let result = chars.filter(chars => chars.status != "Alive" && chars.status != "Dead"); 
-    let Resultados = " <h1>Personajes</h1>";
+    let Resultados = " <h1>Personajes de Otro Estatus</h1>";
         Resultados+="<div class='acomodar'>"; 
     for (let i = 0; i < result.length; i++) {
-        Resultados+=" <div><h2>" + result[i].name+" </h2>";; 
+        Resultados+=" <div class='tarjeta'><h2>" + result[i].name+" </h2>";; 
         Resultados+=" <img src='"+ result[i].image +"'/>";
         Resultados+=" <p>Id:  "+ result[i].id+" </p>";;
         Resultados+=" <p>Estatus: "+ result[i].status+" </p>"; 
@@ -91,10 +122,10 @@ export const OtroStatus = () => {
 export const Especie = (especie) => {
     let e = especie; 
     let result = chars.filter(chars => chars.species == e); 
-    let Resultados = " <h1>Personajes</h1>";
+    let Resultados = " <h1>Personajes de Especie "+ e +"</h1>";
         Resultados+="<div class='acomodar'>"; 
     for (let i = 0; i < result.length; i++) {
-        Resultados+=" <div><h2>" + result[i].name+" </h2>";; 
+        Resultados+=" <div class='tarjeta'><h2>" + result[i].name+" </h2>";; 
         Resultados+=" <img src='"+ result[i].image +"'/>";
         Resultados+=" <p>Id:  "+ result[i].id+" </p>";;
         Resultados+=" <p>Estatus: "+ result[i].status+" </p>"; 
@@ -109,10 +140,10 @@ export const location = (locacion) => {
     let word = locacion; 
     let regEx = new RegExp(word, "i")
     let result = chars.filter(chars => regEx.test(chars.location.name)) 
-    let Resultados = " <h1>Personajes</h1>";
+    let Resultados = " <h1>Personajes de Locacion "+ word +"</h1>";
         Resultados+="<div class='acomodar'>"; 
     for (let i = 0; i < result.length; i++) {
-        Resultados+=" <div><h2>" + result[i].name+" </h2>";; 
+        Resultados+=" <div class='tarjeta'><h2>" + result[i].name+" </h2>";; 
         Resultados+=" <img src='"+ result[i].image +"'/>";
         Resultados+=" <p>Id:  "+ result[i].id+" </p>";;
         Resultados+=" <p>Estatus: "+ result[i].status+" </p>"; 
