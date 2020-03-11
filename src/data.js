@@ -1,25 +1,12 @@
 //importa la data a trabajar
 import data from './data/rickandmorty/rickandmorty.js';
-
 let chars = data.results
 //crea la funcion para buscar por medio de input   
 export const info = (e) => {
     let word = e.target.value
     let regEx = new RegExp(word, "i")
     let result = chars.filter(char=>regEx.test(char.name))
-    let Resultados = " <h1>Personajes</h1>";
-    //Resultados+="<div style = 'direction: rtl; display: flex; justify-content: flex-end;'>"
-    Resultados+="<div class='acomodar'>"; 
-    for (let i = 0; i < result.length; i++) {
-        Resultados+="<div class='tarjeta'> <h2>" + result[i].name+" </h2>";; 
-        Resultados+=" <img src='"+ result[i].image +"'/>";
-        Resultados+=" <p>Id:  "+ result[i].id+" </p>";;
-        Resultados+=" <p>Estatus: "+ result[i].status+" </p>"; 
-        Resultados+=" <p>Especie: "+ result[i].species+" </p>";
-        Resultados+=" <p>Genero: "+ result[i].gender+" </p></div>";
-    }
-        Resultados+="</div>"; 
-    return Resultados;                 
+    return result;                 
 };
 
 export const Primarios = () => {
@@ -86,6 +73,58 @@ export const OtroGenero = () => {
         Resultados+="</div>";
     return Resultados;             
 };
+
+export const Ascendente = () => {
+    let results = chars; 
+    const sortName = results.sort((prev, next) => {
+      if (prev.name > next.name) {
+        return 1;
+      } else if (prev.name < next.name) {
+        return -1;
+      } else {
+        return 0;
+      }
+    });
+
+    let Resultados = " <h1>Ordenar de la A-Z </h1>";
+        Resultados+="<div class='acomodar'>"; 
+    for (let i = 0; i < sortName.length; i++) {
+        Resultados+=" <div class='tarjeta'><h2>" +sortName[i].name+" </h2>";; 
+        Resultados+=" <img src='"+ sortName[i].image +"'/>";
+        Resultados+=" <p>Id:  "+ sortName[i].id+" </p>";;
+        Resultados+=" <p>Estatus: "+ sortName[i].status+" </p>"; 
+        Resultados+=" <p>Especie: "+ sortName[i].species+" </p>";
+        Resultados+=" <p>Genero: "+ sortName[i].gender+" </p></div>";
+ }
+    Resultados+="</div>";
+    return Resultados; 
+  }
+
+  export const Descendente = () => {
+    let results = chars; 
+    const sortName = results.sort((prev, next) => {
+        if (prev.name < next.name) {
+          return 1;
+        } else if (prev.name > next.name) {
+          return -1;
+        } else {
+          return 0;
+        }
+      });
+
+    let Resultados = " <h1>Orde de Z-A </h1>";
+        Resultados+="<div class='acomodar'>"; 
+    for (let i = 0; i < sortName.length; i++) {
+        Resultados+=" <div class='tarjeta'><h2>" +sortName[i].name+" </h2>";; 
+        Resultados+=" <img src='"+ sortName[i].image +"'/>";
+        Resultados+=" <p>Id:  "+ sortName[i].id+" </p>";;
+        Resultados+=" <p>Estatus: "+ sortName[i].status+" </p>"; 
+        Resultados+=" <p>Especie: "+ sortName[i].species+" </p>";
+        Resultados+=" <p>Genero: "+ sortName[i].gender+" </p></div>";
+ }
+    Resultados+="</div>";
+    return Resultados; 
+  }
 export const Status = (status) => {
     let s = status; 
     let result = chars.filter(chars => chars.status == s); 
