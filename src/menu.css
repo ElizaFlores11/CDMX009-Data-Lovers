@@ -15,12 +15,12 @@ header label{
 	.menu a {
 		display: block;
 		padding: 2em;
-		background-color: #BCBFC4;
+		background-color: rgb(143, 161, 192);
 		text-decoration: none;
 		color: black;
 	}
 	.menu a:hover {
-		background-color: #C22623;
+		background-color: tomato;
 	}
 	.menu ul li ul {
 		display: none;
@@ -41,17 +41,17 @@ header label{
 	}
 	.menu{
 		position: absolute;
-		top: 50px; 
+		top: 200px; 
 		left: 0; 
 		width: 60%; 
 	}
 	.menu ul{
 		display: block;
-		background-color: #555; 
+		background-color:; 
 
 	}
 	menu ul li:hover ul{
 		display: none;
 
 	}
-}
+} 

@@ -7,9 +7,69 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #3C4047;
+    background: #CC95C0; 
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(213, 49%, 65%, 0.849), hsla(48, 36%, 78%, 0.767), hsla(313, 35%, 69%, 0.767)), url(/imagenes/rocko1.png); 
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(213, 49%, 65%, 0.849), hsla(48, 36%, 78%, 0.767), hsla(313, 35%, 69%, 0.767)), url(/imagenes/rocko1.png); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ;
     font-family: PTSansNarrow-Bold;
 }
+
+.principal{
+    background: #CC95C0;  
+    /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, hsla(213, 49%, 65%, 0.849), hsla(48, 36%, 78%, 0.767), hsla(313, 35%, 69%, 0.767)), url(/imagenes/rocko1.png);  
+   /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, hsla(213, 49%, 65%, 0.849), hsla(48, 36%, 78%, 0.767), hsla(313, 35%, 69%, 0.767)), url(/imagenes/rocko1.png);
+   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   background-size: auto;
+   background-attachment: fixed;
+   position: relative;
+    font-family:  LibreBaskerville-Bold;    
+   } 
+
+   @media all and (min-width: 360px){
+	.principal{
+      text-align: center;
+        margin-left: initial;
+	}
+	
+    }
+    
+.principaal{
+    height: auto;
+    width: 800px;
+    margin-bottom: 0;
+    margin-left: 15em;
+    background-color:transparent;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+.espaciado{
+    width: 30%;
+    height: 45px; 
+    background-color: rgb(143, 161, 192); 
+    padding:20px; 
+}
+
+   .buscador{
+    padding-top: 30px;
+    padding-left: 50px; 
+    height: 200px; 
+    background-color: black;
+    width: 20%;   
+}
+
+.divmenu{
+   width: 70%; 
+}
+
 footer{
 	height: 100px; 
 	color: white; 
@@ -18,38 +78,14 @@ footer{
     width: 100%;
     font-weight: bold;
 }
-/*header{
- height: 200px;
- width: 100%;
- background-color: #BCBFC4;
- font-family:  LibreBaskerville-Bold;     
-}*/
+ 
 .inicio{
  height: 450px;
  width: 100%;
- background-color: transparent;
+ background-color: black;
  font-family:  LibreBaskerville-Bold;     
 }
-.flex-container {
-    display: flex;
-    justify-content: space-between;
-  }
-.divbuscador{
-    padding-top: 30px;
-    padding-left: 50px; 
-    height: 200px; 
-    background-color: red;
-    width: 20%;   
-}
-.divmenu{
-    width: 70%; 
-}
-.espaciado{
-    width: 30%;
-    height: 45px; 
-    background-color: red; 
-    padding:20px; 
-}
+
 .espaciado input{
     width: 300px;
     height: 20px;
@@ -60,15 +96,17 @@ footer{
     height: auto;
     border-radius: 10px;
     padding: 20px;
-    border: 1px solid #008F99;
+    border: 1px solid transparent;
     margin: 0 auto;
     margin-top: 15px;
     margin-bottom: 15px;
-    background-color: #ffffff;
+    background-color:transparent;
     box-shadow: 3px 3px 7px 1px #333;
+    color: tomato;
+    text-align: center;
 }
 #datos h1{
-    color: #C22623;
+    color: tomato;
     text-align: center;
 }
 
@@ -80,7 +118,8 @@ footer{
     width: 500px; 
     border-radius: 10px;
     padding: 0px;
-    border: 1px solid #008F99;   
+    border: 1px solid hsla(213, 49%, 65%, 0.849);
+    background-color: hsla(48, 91%, 83%, 0.356)  ;
 }
 .tarjeta h2{
     text-align: center;
@@ -88,10 +127,30 @@ footer{
 }
 .tarjeta img{
     margin-left: 50px;
+    background: white;
 }
 .tarjeta p{
     text-align: left;
     font-size: 20px;
     margin-left: 50px;
+    
 }
 
+@media all and (max-width: 320px){
+	.principaal{
+        text-align: center;
+        margin-left: initial;
+		width: 80%;
+	}
+
+.flex-container{
+    flex-wrap: wrap;
+}
+.espaciado{
+    width: 80%;
+}
+.buscador{
+    width: 5%;
+    padding-left: 10px;
+}
+    }

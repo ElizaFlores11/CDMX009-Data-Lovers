@@ -3,6 +3,7 @@ import data from './data/rickandmorty/rickandmorty.js';
 
 let chars = data.results
 //crea la funcion para buscar por medio de input   
+
 export const info = (e) => {
     let word = e.target.value
     let regEx = new RegExp(word, "i")
@@ -19,7 +20,7 @@ export const info = (e) => {
         Resultados+=" <p>Genero: "+ result[i].gender+" </p></div>";
     }
         Resultados+="</div>"; 
-    return Resultados;                 
+    return Resultados;                  
 };
 
 export const Primarios = () => {
@@ -38,7 +39,7 @@ export const Primarios = () => {
     return Resultados;                 
 };
 
-export const Secundarios = () => {
+ export const Secundarios = () => {
     let result = chars.filter(chars => chars.id >= 6 ); 
     let Resultados = " <h1>Personajes Secundarios</h1>";
     Resultados+="<div class='acomodar'>"; 
@@ -70,6 +71,8 @@ export const Genero = (genero) => {
         Resultados+="</div>";
     return Resultados;             
 };
+
+
 
 export const OtroGenero = () => {
     let result = chars.filter(chars => chars.gender != "Female" && chars.gender != "Male" ); 
