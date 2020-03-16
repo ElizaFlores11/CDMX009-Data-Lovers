@@ -7,23 +7,9 @@ export const info = (e) => {
     let word = e.target.value
     let regEx = new RegExp(word, "i")
     let result = chars.filter(char=>regEx.test(char.name))
-<<<<<<< HEAD
     let Resultados = " <h1>Personajes</h1>";
-    //Resultados+="<div style = 'direction: rtl; display: flex; justify-content: flex-end;'>"
-    Resultados+="<div class='acomodar'>"; 
-    for (let i = 0; i < result.length; i++) {
-        Resultados+="<div class='tarjeta'> <h2>" + result[i].name+" </h2>";; 
-        Resultados+=" <img src='"+ result[i].image +"'/>";
-        Resultados+=" <p>Id:  "+ result[i].id+" </p>";;
-        Resultados+=" <p>Estatus: "+ result[i].status+" </p>"; 
-        Resultados+=" <p>Especie: "+ result[i].species+" </p>";
-        Resultados+=" <p>Genero: "+ result[i].gender+" </p></div>";
-    }
         Resultados+="</div>"; 
-    return Resultados;                  
-=======
     return result;                 
->>>>>>> 061dccbc7092e1c0d25f835ced5e5070e451980d
 };
 
 export const Primarios = () => {
