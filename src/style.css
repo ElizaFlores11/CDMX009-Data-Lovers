@@ -136,8 +136,8 @@ footer{
     
 }
 
-@media all and (max-width: 320px){
-	.principaal{
+@media all and (max-width: 780px){
+    .principaal{
         text-align: center;
         margin-left: initial;
 		width: 80%;
