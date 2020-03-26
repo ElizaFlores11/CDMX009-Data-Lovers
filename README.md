@@ -94,9 +94,9 @@ se trabajo con Fedma.
 
   <img src="docs/imagenes/pantallaPrincipal.png" alt="Rick and Morty"/>
  <br/>
- <img src="docs/imagenes/persFerm.png" alt="Rick and Morty"/>
+ <img src="docs/imagenes/persFem.png" alt="Rick and Morty"/>
  <br/>
- <img src="docs/imagenes/personajeSPrimarios.png" alt="Rick and Morty"/>
+ <img src="docs/imagenes/PersonajeSPrimarios.png" alt="Rick and Morty"/>
  
  
 #### Testeos de usabilidad
