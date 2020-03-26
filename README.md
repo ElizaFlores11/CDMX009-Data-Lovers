@@ -1,6 +1,6 @@
 # Data Lovers
 
-<img src="imagenes/principal.png" alt="Rick and Morty">
+<img src="docs/imagenes/principal.png" alt="Rick and Morty">
 
 ## 2. Resumen del proyecto
 
@@ -10,9 +10,10 @@ Se trabajo en dupla para poder avanzar y poder entender como piensa, buena comun
 
 - [x] Diseñar la aplicación pensando y entendiendo al usuario.
 	Creacion de sketch
-	<img src="imagenes/sketch1.png" alt="Rick and Morty"/>
+	<img src="docs/imagenes/sketch1.png" alt="Rick and Morty"/>
 	<br/>
-	<img src="imagenes/principal.png" alt="Rick and Morty"/>
+	<img src="docs/imagenes/principal.png" alt="Rick and Morty"/>
+  <br/>
 - [x] Crear prototipos para obtener _feedback_ e iterar.
 - [x] Aplicar los principios de diseño visual (contraste, alineación, jerarquía).
 - [ ] Planear y ejecutar _tests_ de usabilidad.
