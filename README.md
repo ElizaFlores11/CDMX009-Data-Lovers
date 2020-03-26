@@ -1,94 +1,18 @@
 # Data Lovers
 
-## Índice
-
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Parte adicional-opcional (extensión)](#6-parte-adicional-opcional-extensión)
-* [7. Consideraciones técnicas](#7-consideraciones-técnicas)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
-
-***
-
-## 1. Preámbulo
-
-Según [Forbes](https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read),
-el 90% de la data que existe hoy ha sido creada durante los últimos dos años.
-Cada día generamos 2.5 millones de terabytes de datos, una cifra sin precedentes.
-
-No obstante, los datos por sí mismos son de poca utilidad. Para que esas
-grandes cantidades de datos se conviertan en **información** fácil de leer para
-los usuarios, necesitamos entender, procesar y mostrar estos datos. Una manera
-simple de hacerlo es creando _interfaces_ y _visualizaciones_.
-
-En la siguiente imagen, podrás ver cómo con la data que que se ve en la parte
-izquierda se puede construir (a la derecha) una interfaz amigable y comprensible
-para el usuario.
-
-![json-interfaz](https://lh4.googleusercontent.com/Tn-RPXS26pVvOTdUzRT1KVaJ-_QbFs9SpcGLxSPE43fgbHaXtFgMUInuDt7kV41DkT1j8Tt29V0LxQW7SMtC6digOIhfTXSBKdwI08wUwhD3RAqlwy0hjfmhZ2BFe91mtmCSEqysfgk)
-
-\* Puedes ver el detalle de la data en este [link](https://gist.github.com/lalogf/dd4aa3017a9f8aa8f90dfbca382c4dc9#file-student-json)
-y la interfaz construida en este [link](https://app.talento.laboratoria.la/profile/HFOoMpOreBU2psCcjjLg5O2EWEv2).
+<img src="imagenes/principal.png" alt="Rick and Morty">
 
 ## 2. Resumen del proyecto
 
-En este proyecto **construirás una _página web_ para visualizar un
-_conjunto (set) de datos_** que se adecúe a lo que tu usuario necesita.
-
-Como entregable final tendrás una página web que permita a los usuarios
-**visualizar, filtrar, ordenar, etc.**.
-
-Te proponemos una serie de datos de diferentes _temáticas_ para que los
-explores y decidas con cuál te interesa trabajar. Cada _set_ de datos viene con
-información básica sobre los datos y su estructura, y una lista de las
-necesidades de los usuarios que proviene de una investigación (_research_)
-hecha por el equipo de Laboratoria.
-
-Una vez que elijas, diseña tu proyecto intentando ofrecerle la mejor experiencia
-posible para ayudarle a satisfacer sus necesidades.
-
-### Estos son datos que te proponemos:
-
-* [Indicadores de desarrollo del Banco Mundial](src/data/worldbank/worldbank.json)
-  de algunos países (Brasil, Chile, México y Perú). Estos datos incluyen
-  indicadores demográficos, económicos y comerciales.
-* [Pokémon](src/data/pokemon/pokemon.json):
-  En este set encontrarás una lista con los 151 Pokémon de la región de Kanto,
-  junto con sus respectivas estadísticas usadas en el juego [Pokémon GO](http://pokemongolive.com).
-* [Steam noticias](src/data/steam/steam.json):
-  Lista noticias relacionadas a los videojuegos presentes en la
-  plataforma de [Steam](https://store.steampowered.com/).
-* [League of Legends - Challenger leaderboard](src/data/lol/lol.json):
-  Este set de datos muestra la lista de jugadores en una liga del
-  juego League of Legends (LoL), puedes revisar la documentación de su API en
-  este [link](https://developer.riotgames.com/api-methods/).
-* [Personas heridas por medio de transporte en EEUU](src/data/injuries/injuries.json).
-  Este set nos muestra el número de personas heridas en accidentes de
-  transporte, con data anual desde 1960 y categorizada por tipo de transporte
-  (aire, barco, automóvil, moto, bicicleta, ...).
-* [Rick and Morty](src/data/rickandmorty/rickandmorty.json).
-  Este set nos proporciona la lista de los personajes de la serie Rick and
-  Morty. Puedes revisar la documentación de su API en este [link](https://rickandmortyapi.com).
-* [Pacientes en EEUU](src/data/patient/patient.json).
-  Este set nos proporciona una lista de pacientes de EEUU. Puedes revisar la
-  documentación de su API en este [link](https://r2.smarthealthit.org/Patient).
-
-## 3. Objetivos de aprendizaje
-
-El objetivo principal de este proyecto es que, entendiendo las necesidades de
-tus usuarios, aprendas a diseñar y construir una interfaz web donde se pueda
-visualizar y manipular data.
-
-Revisa la lista y reflexiona sobre los objetivos que conseguiste en el
-proyecto anterior. Piensa en eso al decidir tu estrategia de trabajo individual
-y de equipo.
-
+En este proyecto  se trabajo con la data de Rick and Morty, para seguir aprendiendo DOM, HTML y Js 
+Se trabajo en dupla para poder avanzar y poder entender como piensa, buena comunicación con las compañeras
 ### UX
 
 - [x] Diseñar la aplicación pensando y entendiendo al usuario.
+	Creacion de sketch
+	<img src="imagenes/sketch1.png" alt="Rick and Morty"/>
+	<br/>
+	<img src="imagenes/principal.png" alt="Rick and Morty"/>
 - [x] Crear prototipos para obtener _feedback_ e iterar.
 - [x] Aplicar los principios de diseño visual (contraste, alineación, jerarquía).
 - [ ] Planear y ejecutar _tests_ de usabilidad.
