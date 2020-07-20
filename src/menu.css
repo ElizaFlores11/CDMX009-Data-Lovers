@@ -1,0 +1,68 @@
+.boton{
+	background-color: rgb(143, 161, 192);
+	width: 100%;
+}
+#btn-menu{
+	display: none;
+}
+.boton label{
+	width: 30px;
+	height: 30px;
+	background-color: rgb(143, 161, 192);
+	padding: 10px;
+	border-right: 1px solid #fff;	
+	display: none;
+}
+.boton label:hover{
+	width: 30px;
+	cursor: pointer;
+	background: rgba(0,0,0, 0.3);
+	
+}
+.menu ul {
+		display: flex;
+		padding: 0;
+		margin: 0;
+		list-style: none; 
+}
+.menu a {
+	display: block;
+	padding: 2em;
+	background-color: rgb(143, 161, 192);
+	text-decoration: none;
+	color: black;
+}
+.menu a:hover {
+	background-color: tomato;
+}
+.menu ul li ul {
+	display: none;
+}
+.menu ul li a:hover + ul, .menu ul li ul:hover {
+	display: block;
+}
+.menu a span{
+	margin-left: 15px; 
+}
+@media (max-width: 768px){
+	.boton label{
+		display: block;
+	}
+	.menu{
+		position: absolute;
+		background-color: rgb(143, 161, 192);
+		width: 70%;
+		margin-left: -70%;
+		transition: all 0.5s;
+	}
+	.menu ul{
+		flex-direction: column;
+	
+	}
+	.menu li {
+		border-top: 1px solid #fff;
+	}
+	#btn-menu:checked ~ .menu {
+		margin: 0;
+	}
+} 

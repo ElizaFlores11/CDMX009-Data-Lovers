@@ -1,3 +1,7 @@
+# Deploy 
+
+https://elizaflores11.github.io/CDMX009-Data-Lovers/
+  
 # Data Lovers
 
 <img src="docs/imagenes/principal.png" alt="Rick and Morty">
@@ -114,10 +118,7 @@ Asi quedo el proyecto final,
   <img src="docs/imagenes/interfaz4.png" alt="Rick and Morty"/>
   <br/>
   
-  Proyecto en línea funcionando. 
-  
-  https://elizaflores11.github.io/CDMX009-Data-Lovers/docs/
-  
+
 ### Pruebas unitarias
 
 Se modifico el codigo inicial, con la parte de eslint, falta todavia trabajar con esa parte
