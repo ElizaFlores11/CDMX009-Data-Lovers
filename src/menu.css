@@ -1,68 +1,96 @@
-.boton{
-	background-color: rgb(143, 161, 192);
-	width: 100%;
+/**Menú**/
+.menu-togle{
+    display: none;
+    padding: 1em;
+    top: 5em;
+    border-radius: 5px;
+    right: 0;
 }
-#btn-menu{
-	display: none;
+
+.hamburger,
+.hamburger::before,
+.hamburger::after{
+    content: '';
+    display: block;
+    background: black;
+    height: 3px;
+    width: 1.75em;
+    border-radius: 3px;
 }
-.boton label{
-	width: 30px;
-	height: 30px;
-	background-color: rgb(143, 161, 192);
-	padding: 10px;
-	border-right: 1px solid #fff;	
-	display: none;
-}
-.boton label:hover{
-	width: 30px;
-	cursor: pointer;
-	background: rgba(0,0,0, 0.3);
-	
-}
-.menu ul {
-		display: flex;
-		padding: 0;
-		margin: 0;
-		list-style: none; 
-}
-.menu a {
-	display: block;
-	padding: 2em;
-	background-color: rgb(143, 161, 192);
-	text-decoration: none;
-	color: black;
-}
-.menu a:hover {
-	background-color: tomato;
-}
-.menu ul li ul {
-	display: none;
-}
-.menu ul li a:hover + ul, .menu ul li ul:hover {
-	display: block;
-}
-.menu a span{
-	margin-left: 15px; 
-}
-@media (max-width: 768px){
-	.boton label{
-		display: block;
-	}
-	.menu{
-		position: absolute;
-		background-color: rgb(143, 161, 192);
-		width: 70%;
-		margin-left: -70%;
-		transition: all 0.5s;
-	}
-	.menu ul{
-		flex-direction: column;
-	
-	}
-	.menu li {
-		border-top: 1px solid #fff;
-	}
-	#btn-menu:checked ~ .menu {
-		margin: 0;
-	}
+
+.hamburger::before{
+    transform: translateY(-6px);
 } 
+
+.hamburger::after{
+    transform: translateY(3px);
+}
+
+.site-nav-open{
+    height:auto;
+}
+
+.site-nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.site-nav ul li ul {
+	display: none;
+}
+.site-nav ul li a:hover + ul, .site-nav ul li ul:hover {
+	display: block;
+}
+
+.site-nav a{
+    color: black;
+    display: block;
+    padding: 1em 2em;
+    background-color: rgb(143, 161, 192);
+    font-size: 15px;
+    font-family: font-text;
+    text-decoration: none;
+    width: 100px;
+    height: 40px;
+}
+
+.site-nav a:hover{
+    background-color: tomato;
+    opacity: 0.8;
+    color: aliceblue;
+    border-radius: 5px;
+}
+
+@media (max-width: 750px) {
+ 
+    .menu-togle{
+        display: block;
+    }
+    .site-nav{
+        height: 0;
+        overflow: hidden;
+        position: absolute;
+        background-color: tomato;
+        opacity: 0.8;    
+    }
+    .site-nav ul{
+        flex-direction: column;
+    }
+    .site-nav-open{
+        height:auto;
+        z-index: 2;
+        position:absolute;
+        left:0;
+        border-radius: 10px;
+    }
+    .site-nav li{
+        border: 1px solid #FAF7EE ;
+    }
+    .site-nav ul li ul {
+        display: block;
+    }
+    
+    
+
+}

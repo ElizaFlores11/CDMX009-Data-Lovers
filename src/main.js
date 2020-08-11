@@ -93,3 +93,9 @@ document.querySelector('#tierra').addEventListener('click', () => {
 document.querySelector('#OtroLocacion').addEventListener('click', () => {
   datos.innerHTML = location('Interdimensional');
 });
+
+let menu = document.querySelector("#menu");
+    menu.addEventListener("click", () =>{
+    let siteNav = document.querySelector("#site-nav");
+        siteNav.classList.toggle("site-nav-open");
+    });
