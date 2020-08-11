@@ -52,10 +52,11 @@ body{
   }
 
 .espaciado{
-    width: 30%;
-    height: 45px; 
+    width: 28%;
+    height: 30px; 
     background-color: rgb(143, 161, 192); 
     padding:20px; 
+    border-radius: 5px;
 }
 
    .buscador{
@@ -63,7 +64,7 @@ body{
     padding-left: 50px; 
     height: 200px; 
     background-color: black;
-    width: 20%;   
+    width: 200px;   
 }
 
 .divmenu{
@@ -143,11 +144,14 @@ footer{
 		width: 80%;
 	}
 
-.flex-container{
-    flex-wrap: wrap;
-}
 .espaciado{
-    width: 80%;
+    width: 70%;
+}
+.divmenu{
+    width: 30%;
+}
+.espaciado input{
+    width: 250px;
 }
 .buscador{
     width: 5%;
